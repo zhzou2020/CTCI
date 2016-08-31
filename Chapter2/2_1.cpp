@@ -39,6 +39,7 @@ void del2(Node* head){
 	}
 }
 
+// assume head is not NULL
 int main() {
 	// your code goes here
 	Node n1;
