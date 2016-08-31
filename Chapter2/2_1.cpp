@@ -21,6 +21,24 @@ void del(Node* head){
 	}
 }
 
+void del2(Node* head){
+	Node* cur = head;
+	Node* runner = cur;
+	
+	while(cur){
+		while(runner -> next){
+			if(runner -> next -> data == cur -> data){
+				runner -> next = runner -> next -> next;
+			}else{
+				runner = runner -> next;
+			}
+		}
+		
+		cur = cur -> next;
+		runner = cur;
+	}
+}
+
 int main() {
 	// your code goes here
 	Node n1;
@@ -39,7 +57,7 @@ int main() {
 	n5.next = NULL;
 	n5.data = 3;
 	
-	del(&n1);
+	del2(&n1);
 	
 	Node* cur = &n1;
 	while(cur){
