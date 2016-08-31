@@ -1,9 +1,7 @@
-Linked List
+Linked List<br>
 
-* Runner Technique
+Runner Technique
+* Two pointers, one faster, one slower
 
-Two pointers, one faster, one slower
-
-* Recursive Problems
-
-Try recursion
+Recursive Problems
+* Try recursion
