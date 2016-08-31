@@ -2,6 +2,7 @@
 #include <stack>
 using namespace std;
 
+// similar to insertion sort
 void sort(stack<int> * s){
 	stack<int> s1;//smallest on the top
 	stack<int> * sorted = &s1;
